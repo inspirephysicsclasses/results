@@ -83,6 +83,30 @@
             padding: 30px 20px;
         }
 
+        /* --- NEW SECTION TITLE STYLE --- */
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        /* Decorative Gold Underline */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
         /* --- Glass Poster Cards --- */
         .poster-card {
             /* Glassmorphism Card Style */
@@ -219,6 +243,8 @@
     </header>
 
     <div class="container">
+
+        <h2 class="section-title">Our Results</h2>
 
         <div class="poster-card">
             <img src="images/Image%2013.jpg" alt="Result 13">
