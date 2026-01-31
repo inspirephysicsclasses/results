@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Inspire Coaching Classes</title>
+    <style>
+        :root {
+            --primary: #2563eb;       /* Professional Blue */
+            --secondary: #1e293b;     /* Dark Slate for Text */
+            --accent: #f59e0b;        /* Amber for Highlights */
+            --bg: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--secondary);
+            margin: 0;
+            padding: 0;
+            padding-bottom: 80px; /* Space for the floating button */
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: linear-gradient(135deg, var(--primary), #1d4ed8);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .tagline {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            background-color: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        /* --- Gallery Container --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Year Section Headers --- */
+        .year-header {
+            display: flex;
+            align-items: center;
+            margin: 40px 0 20px 0;
+            color: var(--primary);
+        }
+        
+        .year-header h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-right: 15px;
+        }
+
+        .line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #e2e8f0;
+        }
+
+        /* --- Image Grid --- */
+        .image-grid {
+            display: grid;
+            gap: 20px;
+            /* Default: 1 column on mobile, 2 on tablet/desktop */
+            grid-template-columns: 1fr; 
+        }
+
+        @media (min-width: 600px) {
+            .image-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* --- Individual Image Cards --- */
+        .result-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .result-card:active {
+            transform: scale(0.98);
+        }
+
+        .result-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            loading: lazy; /* Improves speed */
+        }
+
+        .caption {
+            padding: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            color: #64748b;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        /* --- Floating Action Button (Call Now) --- */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secondary); /* Dark elegant button */
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            width: max-content;
+        }
+
+        .fab:hover {
+            background-color: black;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Inspire Coaching Classes</h1>
+        <p class="subtitle">Physics | Chemistry | Biology | Maths</p>
+        <div class="tagline">Excellence in 9th-12th, NEET & MHT-CET</div>
+    </header>
+
+    <div class="container">
+
+        <div class="year-header">
+            <h2>2026 Results</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="image-grid">
+            <div class="result-card">
+                <img src="images/2026-topper1.jpg" alt="Student Name">
+                <div class="caption">Topper Name - 9X.XX%</div>
+            </div>
+            
+            <div class="result-card">
+                <img src="images/2026-topper2.jpg" alt="Student Name">
+            </div>
+        </div>
+
+
+        <div class="year-header">
+            <h2>2025 Results</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="image-grid">
+            <div class="result-card">
+                <img src="images/2025-group.jpg" alt="2025 Batch">
+                <div class="caption">Class 12th Batch 2025</div>
+            </div>
+             <div class="result-card">
+                <img src="images/2025-topper.jpg" alt="2025 Topper">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Inspire Coaching Classes, Dharmabad</p>
+        <p>Managed by Pathan Sir</p>
+    </footer>
+
+    <a href="tel:9011291176" class="fab">
+        📞 Call for Admissions
+    </a>
+
+</body>
+</html>
