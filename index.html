@@ -110,26 +110,10 @@
             border-radius: 2px;
         }
 
-        /* --- FIXED HIGHLIGHT EFFECT --- */
+        /* --- COLORED TEXT HIGHLIGHT EFFECT --- */
         .highlight {
             font-weight: 800;
-            color: #1a1438;
-            /* This gradient maps from top to bottom:
-               0% - 45%: Transparent (leaves space for upper matras)
-               45% - 85%: Yellow Marker (sits exactly behind the main letters)
-               85% - 100%: Transparent (lifts the marker off the bottom floor)
-            */
-            background: linear-gradient(
-                to bottom, 
-                transparent 45%, 
-                rgba(255, 215, 0, 0.65) 45%, 
-                rgba(255, 215, 0, 0.65) 85%, 
-                transparent 85%
-            );
-            padding: 0 4px;
-            border-radius: 2px;
-            -webkit-box-decoration-break: clone;
-            box-decoration-break: clone;
+            color: #d32f2f; /* Bold crimson red to make the text stand out */
         }
 
         /* --- Glass Poster Cards --- */
